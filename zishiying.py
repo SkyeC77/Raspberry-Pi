@@ -1,0 +1,5 @@
+im_at_mean = cv2.adaptiveThreshold(im_gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 5, 7)
+axis("off")
+title("Adaptive Thresholding with gaussian weighted average")
+imshow(im_at_mean, cmap = 'gray') 
+show()
